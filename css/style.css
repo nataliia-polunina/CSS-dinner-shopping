@@ -1,0 +1,105 @@
+body {
+	font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+	font-size: 18px;
+	background: #282828;
+}
+
+* {
+	transition: all .1s ease-in;
+	box-sizing:  border-box;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+	border: 20px solid #ffffff;
+	background-color: #3b3f45;
+	margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: fixed; 
+}
+
+header {
+	background: #4a4f56;
+	text-align: center;
+	color: #eb7e75;
+	padding: 10px 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+header p {
+	margin: 0;
+	margin-top: 5px;
+}
+
+ul {
+	list-style-type: none;
+	max-width: 50%;
+	padding: 20px 0;
+	margin: 10px auto;
+}
+
+.paragraph {		
+	padding: 0 15px;
+	color: #fff;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	border-top: 2px solid rgba(0,0,0,0); 
+}
+
+.paragraph p {	
+	display: inline-block;
+}
+
+.paragraph p span {
+	font-size: 14px;
+	
+}
+
+.done {
+	margin: 12px;
+}
+
+ul li:nth-child(odd) {
+	background: #88839e;		
+}
+
+ul li:nth-child(even) {
+	background: #7a7593;		
+}
+
+.paragraph p span:before {
+	content: '(';
+}
+
+.paragraph p span:after {
+	content: ')';
+}
+
+ul li .paragraph:hover,
+ul li .paragraph:focus {
+	background: #625e77;		
+	border-bottom: 2px solid #fff;
+	border-top: 2px solid #fff;
+}
+ul li .paragraph:active {
+	background: #d4424b; 
+}
+
+.check:checked ~ .done {
+	text-decoration: line-through;
+	color: #9b91a3;
+} 
+
+footer {
+	max-width: 50%;
+	margin: 0 auto;
+	padding: 5px 0;
+	background: #4a4f56;
+	text-align: center;
+	color: #eb7e75;
+}
